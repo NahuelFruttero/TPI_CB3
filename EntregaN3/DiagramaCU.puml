@@ -1,0 +1,52 @@
+@startuml
+left to right direction
+
+skinparam packageStyle rectangle
+
+rectangle CasosDeUsoEsenciales {
+
+:Cajero:-> (1. Consultar Datos del Cliente)
+:Cajero:--> (2. Verificar Datos del Vehículo)
+:Cajero:--> (3. Consultar Turno)
+:Cajero:--> (4. Consultar primera o segunda revisión)
+:Cajero:--> (5. Entregar Comprobante)
+:Cajero:--> (6. Realizar Cobro)
+:Cajero:--> (7. Registrar Inspección)
+(4. Consultar primera o segunda revisión) .> (5. Entregar Comprobante) : extends
+
+
+:Inspector:--> (8. Registrar datos del frenómetro)
+:Inspector:--> (9. Recopilar datos de alineación)
+:Inspector:--> (10. Identificar defectos visuales)
+:Inspector:-> (11. Registrar defectos visuales)
+:Inspector:--> (12. Registrar fin de la Inspección)
+
+
+:Supervisor:--> (13. Revisar resultados de medición)
+:Supervisor:--> (14. Emitir Informe de Mediciones)
+:Supervisor:--> (15. Emitir Informe con resultado condicional)
+:Supervisor:--> (16. Emitir Informe con resultado rechazado)
+:Supervisor:--> (17. Emitir Oblea)
+
+(14. Emitir Informe de Mediciones) .> (15. Emitir Informe con resultado condicional) : extends
+(14. Emitir Informe de Mediciones) .> (16. Emitir Informe con resultado rechazado) : extends
+(13. Revisar resultados de medición) .> (17. Emitir Oblea) : extends
+
+
+:Gerente:-->(18. Enviar Reporte al Municipio)
+
+}
+
+rectangle CasosDeUsoSoporte {
+
+' CASOS DE USO DE SOPORTE
+:Empleado Administrativo:--> (19. Registro de Obleas)
+:Empleado Administrativo:--> (20. Consultar Stock de Obleas)
+
+:Administrador de Sistemas:--> (21. Programar Back Up)
+:Administrador de Sistemas:--> (22. Actualizar Tecnologías usadas en el Sistema)
+:Administrador de Sistemas:--> (23. Revisar integraciones con otros Sistemas)
+
+}
+
+@enduml
