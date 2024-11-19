@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="org.example.Vistas.RegistrarInspeccion">
+  <grid id="27dc6" binding="pnlRegistrarInscripcion" layout-manager="GridLayoutManager" row-count="9" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="5" left="5" bottom="5" right="5"/>
+    <constraints>
+      <xy x="42" y="56" width="477" height="348"/>
+    </constraints>
+    <properties>
+      <background color="-986896"/>
+      <font/>
+      <foreground color="-14606047"/>
+    </properties>
+    <border type="line">
+      <color color="-14606047"/>
+    </border>
+    <children>
+      <component id="1018d" class="javax.swing.JTextField" binding="txtPatente">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="9105f" class="javax.swing.JTextField" binding="txtModelo">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="b844e" class="javax.swing.JLabel" binding="lblaFab">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="120" height="17"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-5123865"/>
+          <font/>
+          <labelFor value="d86a7"/>
+          <text value="Año de Fabricación:"/>
+        </properties>
+      </component>
+      <component id="d86a7" class="javax.swing.JTextField" binding="txtaFab">
+        <constraints>
+          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="75ec6" class="javax.swing.JTextField" binding="txtMarca">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="e8bd9" class="javax.swing.JButton" binding="registrarInscripciónButton" default-binding="true">
+        <constraints>
+          <grid row="8" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-13926751"/>
+          <font name="Helvetica" size="18" style="1"/>
+          <foreground color="-1"/>
+          <text value="REGISTRAR INSCRIPCIÓN TÉCNICA"/>
+        </properties>
+      </component>
+      <component id="8ad77" class="javax.swing.JLabel" binding="lblChasis">
+        <constraints>
+          <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font/>
+          <labelFor value="f1131"/>
+          <text value="Número de Chasis:"/>
+        </properties>
+      </component>
+      <component id="f1131" class="javax.swing.JTextField" binding="txtChasis">
+        <constraints>
+          <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="574bb" class="javax.swing.JLabel" binding="lblTipo">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="120" height="17"/>
+          </grid>
+        </constraints>
+        <properties>
+          <background color="-5123865"/>
+          <font/>
+          <labelFor value="ca829"/>
+          <text value="Tipo de Vehículo:"/>
+          <verticalAlignment value="1"/>
+          <verticalTextPosition value="1"/>
+        </properties>
+      </component>
+      <component id="4f08a" class="javax.swing.JComboBox" binding="cbCom">
+        <constraints>
+          <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Nafta"/>
+            <item value="Gasoil"/>
+          </model>
+        </properties>
+      </component>
+      <component id="473c8" class="javax.swing.JLabel" binding="lblPatente">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <labelFor value="1018d"/>
+          <text value="Patente:"/>
+        </properties>
+      </component>
+      <component id="18f87" class="javax.swing.JLabel" binding="lblMarca">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <labelFor value="75ec6"/>
+          <text value="Marca:"/>
+        </properties>
+      </component>
+      <component id="513e4" class="javax.swing.JLabel" binding="lblModelo">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <labelFor value="9105f"/>
+          <text value="Modelo:"/>
+        </properties>
+      </component>
+      <component id="fb497" class="javax.swing.JLabel" binding="lblCom">
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font/>
+          <labelFor value="4f08a"/>
+          <text value="Tipo de Combustible:"/>
+        </properties>
+      </component>
+      <component id="ca829" class="javax.swing.JComboBox" binding="cbTipo">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Sedán"/>
+            <item value="Hatchback"/>
+            <item value="Coupé"/>
+            <item value="SUV"/>
+            <item value="Pick-up"/>
+            <item value="Camión"/>
+            <item value="Colectivo"/>
+          </model>
+        </properties>
+      </component>
+      <component id="f48a1" class="javax.swing.JTextField" binding="INGRESELOSDATOSDELTextField" default-binding="true">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+          <font name="Helvetica" size="14" style="1"/>
+          <horizontalAlignment value="0"/>
+          <text value="INGRESE LOS DATOS DEL VEHICULO:"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
